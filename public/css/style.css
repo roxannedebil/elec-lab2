@@ -1,0 +1,298 @@
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(100deg, #00C7B1, #4a5f90, #FFADC6);
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Base styles for header and navbar */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo img {
+    height: 40px; /* Adjust size as needed */
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease, background-image 0.3s ease;
+    background-clip: text; /* Ensures background gradient applies to text */
+    -webkit-background-clip: text; /* Ensures compatibility with WebKit browsers */
+    
+}
+
+/* Gradient hover effect */
+.nav-links a:hover {
+    background-image: linear-gradient(100deg, #00C7B1, #4a5f90, #FFADC6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Keeps text color transparent to show gradient */
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px 15px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-image: linear-gradient(100deg, #00C7B1, #4a5f90, #FFADC6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757; /* Background color on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+.welcome-message {
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background */
+}
+
+.welcome-message h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.welcome-message h2 {
+    font-size: 1.5em;
+    color: #ddd;
+}
+
+
+
+.content {
+    margin: 20px;
+}
+
+.content h2 {
+    text-align: center;
+    color: white;
+
+}
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+/* .category {
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+} */
+.category img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.category-twice {
+    background-color: #FFADC6;
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;    
+    overflow: hidden; 
+}
+.category-bini {
+    background-color: #00C7B1;
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;    
+    overflow: hidden; 
+}
+
+.category-newjeans {
+    background-color: #7e93ba;
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;    
+    overflow: hidden; 
+}
+
+.category-twice:hover{
+    transform: scale(1.09);  
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.category-bini:hover {
+    transform: scale(1.09);  
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);  
+}
+
+.category-newjeans:hover {
+    transform: scale(1.09);  
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);  
+}
+
+
+.shop-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333; /* Customize the background color */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+    background-color: #596f98; /* Customize hover color */
+}
+
+.category a {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+
+.about-section, .contact-section {
+    color: white;
+    padding: 40px 20px;
+    background-color: rgba(92, 89, 89, 0.5); /* Optional: Semi-transparent background */
+}
+
+/* CONTACT FORM  */
+.contact-form{
+    padding: 30px;
+    width: 600px;
+    text-align: left;
+    color: white;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6f6e6e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #4a5f90;
+}
+
+.contact-form p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
